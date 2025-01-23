@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pricedown&display=swap');
+    .font-pricedown {
+      font-family: 'Pricedown', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+<section>
+  <!-- Timeline Container -->
+  <div class="timeline-container">
+    <div class="relative h-[300vh] overflow-hidden">
+      <!-- Background Image -->
+      <img src="../images/animated_dim.jpg" alt="Background Path" class="w-full absolute object-cover">
+
+      <h1 class="text-white absolute text-4xl md:text-7xl md:top-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-100 font-bold">Gun Timeline</h1>
+      
+      <div class="image-container absolute left-[1vw] top-[5vh] max-h-[200vw] overflow-hidden">
+        <img src="../images/path.png" alt="Path" class="map-image w-[98vw]">
+      </div>
+      
+      <!-- First Event (WW I ERA) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 10%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: 12vh; left: -2vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-10%) translateX(-115%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/gun1.png" alt="WW I Era Gun">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            1903 - WW I ERA
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            1903 Springfield Rifle Adopted
+          </div>
+          <p class="text-white text-sm md:text-xl">1903 Springfield bolt-action rifle adopted for use by U.S. Army in World War I. Introduces .30-06 cartridge.</p>
+        </div>
+      </div>
+
+      <!-- Second Event (POST WW I ERA) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 40%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -17vh; left: 19.5vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-90%) translateX(127%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/gun2.png" alt="Post WW I Era Gun">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            1920s - POST WW I ERA
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            Bolt-Action Rifles Become Popular
+          </div>
+          <p class="text-white text-sm md:text-xl">Bolt-action hunting rifles became popular after World War I. The .30-06 continues today as one of the most popular big-game calibers in the United States.</p>
+        </div>
+      </div>
+
+      <!-- Third Event (WW II ERA) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 70%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -63vh; left: 1vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-180%) translateX(-100%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/gun3.png" alt="WW II Era Gun">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            1940s - WW II ERA
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            First Semi-Automatic Rifle
+          </div>
+          <p class="text-white text-sm md:text-xl">First semi-automatic U.S. service rifle, the Garand, is first used in World War II.</p>
+        </div>
+      </div>
+
+      <!-- Fourth Event (VIETNAM WAR ERA) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 40%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: 70vh; left: 18vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform:  translateY(40%) translateX(120%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/gun4.png" alt="Vietnam War Era Gun">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            1960s - VIETNAM WAR ERA
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            M-16 Becomes Service Rifle
+          </div>
+          <p class="text-white text-sm md:text-xl">M-16 becomes service rifle, first sees combat in Vietnam War. Updated versions continue as current U.S. service rifle.</p>
+        </div>
+      </div>
+
+      <!-- Fifth Event (TODAY) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 100%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -83vh; left: 2vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-160%) translateX(-100%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/gun5.png" alt="Today Gun">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            2020s - TODAY
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            AR Rifles for Hunting
+          </div>
+          <p class="text-white text-sm md:text-xl">AR (Armalite)-platform rifles are semi-automatic versions that look like their military counterparts. Now offered with hunt-specific features, these rifles are popular for varmint and big-game hunting.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pricedown&display=swap');
+    .font-pricedown {
+      font-family: 'Pricedown', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+<section>
+  <!-- Timeline Container -->
+  <div class="timeline-container">
+    <div class="relative h-[300vh] overflow-hidden">
+      <!-- Background Image -->
+      <img src="../images/animated_dim.jpg" alt="Background Path" class="w-full absolute object-cover">
+
+      <h1 class="text-white absolute text-4xl md:text-7xl md:top-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-100 font-bold">Vase Timeline</h1>
+      
+      <div class="image-container absolute left-[1vw] top-[5vh] max-h-[200vw] overflow-hidden">
+        <img src="../images/path.png" alt="Path" class="map-image w-[98vw]">
+      </div>
+      
+      <!-- First Event (1127 to 1279) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 10%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: 12vh; left: -2vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-10%) translateX(-115%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/vase1.png" alt="1127 to 1279 Vase">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            1127 to 1279
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            Japanese Tea Ceremony Vase
+          </div>
+          <p class="text-white text-sm md:text-xl">Vases of this type were especially popular in Japan, where they were sometimes used in the tea ceremony.</p>
+        </div>
+      </div>
+
+      <!-- Second Event (16th century) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 40%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -17vh; left: 19.5vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-90%) translateX(127%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/vase2.png" alt="16th century Vase">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            16th century
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            European Ceramic Vase from Deruta
+          </div>
+          <p class="text-white text-sm md:text-xl">The vase, which was made in the city of Deruta, illustrates two main influences on European ceramic design.</p>
+        </div>
+      </div>
+
+      <!-- Third Event (18th century) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 70%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -63vh; left: 1vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-150%) translateX(-100%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/vase3.png" alt="18th century Vase">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            18th century
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            English Delft Vase Gifted to Queen
+          </div>
+          <p class="text-white text-sm md:text-xl">English Delft vase, gifted to the queen in the 18th century.</p>
+        </div>
+      </div>
+
+      <!-- Fourth Event (19th century) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 40%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: 70vh; left: 18vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform:  translateY(40%) translateX(120%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/vase4.png" alt="19th century Vase">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            19th century
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            Famille Rose Chinese Vases
+          </div>
+          <p class="text-white text-sm md:text-xl">The vases are famille rose—a group of Chinese porcelains painted with shades of opaque pink overglaze.</p>
+        </div>
+      </div>
+
+      <!-- Fifth Event (20th century) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 100%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -83vh; left: 2vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-160%) translateX(-100%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/vase5.png" alt="20th century Vase">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            20th century
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            Small Contemporary Posy Jar
+          </div>
+          <p class="text-white text-sm md:text-xl">Small Contemporary Posy Jar, English, Art Glass, Baluster Urn, Flower Vase.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

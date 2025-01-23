@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pricedown&display=swap');
+    .font-pricedown {
+      font-family: 'Pricedown', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+<section>
+  <!-- Timeline Container -->
+  <div class="timeline-container">
+    <div class="relative h-[300vh] overflow-hidden">
+      <!-- Background Image -->
+      <img src="../images/animated_dim.jpg" alt="Background Path" class="w-full absolute object-cover">
+
+      <h1 class="text-white absolute text-4xl md:text-7xl md:top-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-100 font-bold">Bell Timeline</h1>
+      
+      <div class="image-container absolute left-[1vw] top-[5vh] max-h-[200vw] overflow-hidden">
+        <img src="../images/path.png" alt="Path" class="map-image w-[98vw]">
+      </div>
+      
+      <!-- First Event (5th to 6th century) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 10%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: 12vh; left: -2vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-10%) translateX(-115%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/bell1.png" alt="5th to 6th century Bell">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            5th to 6th century
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            First Bell Ever Made
+          </div>
+          <p class="text-white text-sm md:text-xl">The first bell ever made was made up of rock.</p>
+        </div>
+      </div>
+
+      <!-- Second Event (12th century) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 40%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -17vh; left: 19.5vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-90%) translateX(127%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/bell2.png" alt="12th century Bell">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            12th century
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            San Michele in Borgo Bell
+          </div>
+          <p class="text-white text-sm md:text-xl">San Michele in Borgo is a Roman Catholic church in Pisa, region of Tuscany, Italy.</p>
+        </div>
+      </div>
+
+      <!-- Third Event (12th to 13th century) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 70%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -63vh; left: 1vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-180%) translateX(-100%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/bell3.png" alt="12th to 13th century Bell">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            12th to 13th century
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            Bronze Temple Bell
+          </div>
+          <p class="text-white text-sm md:text-xl">Property from a European private collection, a bronze temple bell.</p>
+        </div>
+      </div>
+
+      <!-- Fourth Event (14th to 15th century) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 40%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: 70vh; left: 18vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform:  translateY(40%) translateX(120%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/bell4.png" alt="14th to 15th century Bell">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            14th to 15th century
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            Glencairn's Ecclesiastical Bells
+          </div>
+          <p class="text-white text-sm md:text-xl">Glencairn's Fourteenth-Century Ecclesiastical Bells.</p>
+        </div>
+      </div>
+
+      <!-- Fifth Event (18th Century) -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 100%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -83vh; left: 2vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-160%) translateX(-100%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="../images/bell5.png" alt="18th Century Bell">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            18th Century
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            WWII Bell Melting Incident
+          </div>
+          <p class="text-white text-sm md:text-xl">During the Second World War, they were to be melted down in Hamburg to make shell casings for cartridges for the German army.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
