@@ -3,39 +3,225 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timeline</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>RUBIX WEBSITE</title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+   
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Pricedown&display=swap');
     .font-pricedown {
       font-family: 'Pricedown', sans-serif;
     }
+    .navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default text color */
+    padding: 0 10px; /* Add some spacing */
+    cursor: default; /* Set cursor to default arrow */
+    }
+    .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1; /* Ensures content is above the video */
+    }
+    .homepage {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.full-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire area without distortion */
+  z-index: -1; /* Ensures the video remains in the background if you add content on top */
+}
+.aboutus{
+  height: 100vh;
+}
+.abh{
+  padding-top: 150px;
+}
+.tools{
+  height:100vh;
+}
+.frozen {
+  opacity: 1;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none; /* This ensures that the video doesn't block any interactions */
+}
+
+/* Play the video when hovering */
+.card:hover video {
+  opacity: 1;
+  pointer-events: all; /* Enable interaction during hover */
+}
+
+
+    
   </style>
 </head>
 <body class="bg-black text-white">
+  <header class="text-white-1000 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0">
+      <img src="" alt="">ArtiFACTS
   
-  <section class="min-h-screen">
-
-    <nav class="sticky top-0 z-10">
-      <div class="max-w-5xl mx-auto px-4">
-        <div class="flex items-center justify-between h-16">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Contact</a>
-        </div>
-      </div>
+    </a>
+    <nav class="navbar md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-10 hover:text-gray-500">Home</a>
+      <a href="#aboutus" class="mr-10 hover:text-gray-500">About Us</a>
+      <a href="#tools" class="mr-10 hover:text-gray-500">Tools</a>
+      <a href="#cu" class="mr-10 hover:text-gray-500">Contact Us</a>
     </nav>
-
-
-
+    <button class="inline-flex items-center bg-yellow-500 border-0 py-3 px-4 focus:outline-none hover:bg-yellow-600 rounded text-base mt-4 md:mt-0">Get Started
+    </button>
+  </div>
+</header>
+<section class="homepage mb-10">
+  <div class="overlay-content space-x-4">
+    <h6 class="text-4xl font-bold font-poppins mb-6">Explore the hidden stories and cultural significance behind timeless artifacts and with ArtiFACTS.</h6>
+    <button class="inline-flex items-center bg-transparent rounded-lg border-2 py-3 px-4 focus:outline-none hover:bg-yellow-500 rounded text-base mt-4 md:mt-0">Learn More</button>
+    <button class="inline-flex items-center bg-transparent border-2 rounded-lg py-3 px-4 focus:outline-none hover:bg-yellow-500 rounded text-base mt-4 md:mt-0">Explore Our Tools</button>
+  </div>
+  <video autoplay loop muted playsinline class="full-video">
+    <source src="WhatsApp Video 2025-01-23 at 16.16.54_8eeff144.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+<section id="aboutus" class="aboutus justify-center items-center">
+  <h6 class="abh text-4xl font-bold font-poppins text-center">ABOUT US</h6>
+  <section class="text-white-600 body-font">
+    <div class="container py-24 mx-auto">
+      <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center text-3xl">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+          <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+        </svg>
+        <p class="leading-relaxed text-lg ">Cultural Artifact Recognition: Preserving Heritage Through AI 
+          This project leverages advanced AI to identify and classify cultural artifacts from images, providing historical and cultural insights to preserve global heritage. With features like hyperlocal artifact recognition, age estimation, augmented reality visualization, and community-driven data enrichment, it serves as a bridge between technology and culture. Explore the timeline of cultural evolution and contribute to the preservation and restoration of our shared history.</p>
+        <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
+      </div>
+    </div>
   </section>
+</section>
+</section>
+<section id="tools" class="pt-5 tools min-h-screen">
+  <h1 class="text-4xl font-bold text-center mt-8">EXPLORE OUR TOOLS</h1>
+  <div class="grid grid-cols-3 gap-8 p-8">
+    <!-- Card 1 -->
+    <a href="pages\artifactrecognition.html" target="_blank"  class="flex flex-col items-center border rounded-lg shadow hover:scale-105 transition-all duration-300 ease-in-out">
+      <div class="relative w-full h-48 card group hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out relative">
+        <video class="w-full h-full object-cover rounded-t-lg group-hover:opacity-100 opacity-50 transition-opacity duration-300" muted loop preload="metadata">
+          <source src="videos/ArtifactRecognition.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="flex flex-col justify-between p-4 leading-normal text-center">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight">Artifact Recognition & AR</h5>
+        <p class="mb-3 font-normal">Identify and classify cultural artifacts from images while providing historical and cultural context.</p>
+      </div>
+    </a>
+    <!-- Card 2 -->
+    <a href="#" class="flex flex-col items-center border rounded-lg shadow hover:scale-105 transition-all duration-300 ease-in-out">
+      <div class="relative w-full h-48 card group hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out relative">
+        <video class="w-full h-full object-cover rounded-t-lg group-hover:opacity-100 opacity-50 transition-opacity duration-300" muted loop preload="metadata">
+          <source src="videos/AgeEstimation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="flex flex-col justify-between p-4 leading-normal text-center">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight">Age Estimation & Authentication</h5>
+        <p class="mb-3 font-normal">Predict an artifact’s age and verify its authenticity, aiding in detecting counterfeit items.</p>
+      </div>
+    </a>
+    <!-- Card 3 -->
+    <a href="#" class="flex flex-col items-center border rounded-lg shadow hover:scale-105 transition-all duration-300 ease-in-out">
+      <div class="relative w-full h-48 card group hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out relative">
+        <video class="w-full h-full object-cover rounded-t-lg group-hover:opacity-100 opacity-50 transition-opacity duration-300" muted loop preload="metadata">
+          <source src="videos/AugmentedReality.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="flex flex-col justify-between p-4 leading-normal text-center">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight">Climate Impact</h5>
+        <p class="mb-3 font-normal">View artifacts in their original settings or as 3D holograms for an immersive experience.</p>
+      </div>
+    </a>
+    <!-- Card 4 -->
+    <a href="#" class="flex flex-col items-center border rounded-lg shadow hover:scale-105 transition-all duration-300 ease-in-out">
+      <div class="relative w-full h-48 card group hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out relative">
+        <video class="w-full h-full object-cover rounded-t-lg group-hover:opacity-100 opacity-50 transition-opacity duration-300" muted loop preload="metadata">
+          <source src="videos/ClimateImpact.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="flex flex-col justify-between p-4 leading-normal text-center">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight">Restoration Insights</h5>
+        <p class="mb-3 font-normal">Predict potential environmental
+          risks to artifacts based on local climate changes</p>
+      </div>
+    </a>
+  
+    <!-- Card 5 -->
+    <a  target="_blank" href="timeline.html" class="flex flex-col items-center border rounded-lg shadow hover:scale-105 transition-all duration-300 ease-in-out">
+      <div class="relative w-full h-48 card group hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out relative">
+        <video class="w-full h-full object-cover rounded-t-lg group-hover:opacity-100 opacity-50 transition-opacity duration-300" muted loop preload="metadata">
+          <source src="videos\CulturalMapping.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="flex flex-col justify-between p-4 leading-normal text-center">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight">Cultural Mapping</h5>
+        <p class="mb-3 font-normal">See how artifacts have evolved
+          across time and regions</p>
+      </div>
+    </a>
+  
+   <!-- Card 6 -->
+   <a href="http://127.0.0.1:5000" target="_blank" class="flex flex-col items-center border rounded-lg shadow hover:scale-105 transition-all duration-300 ease-in-out">
+    <div class="relative w-full h-48 card group hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out relative">
+      <video class="w-full h-full object-cover rounded-t-lg group-hover:opacity-100 opacity-50 transition-opacity duration-300" muted loop preload="metadata">
+        <source src="videos/CommunityContribution.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="flex flex-col justify-between p-4 leading-normal text-center">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight">Community Contribution</h5>
+      <p class="mb-3 font-normal">Contribute by uploading images
+        and providing additional context.</p>
+    </div>
+  </a>
 
-  <section>
-  <!-- Timeline Container -->
+  
+</div>    
+</section>
+
+   
+
+
+
+
+
+
+  
+
+
+
+  
+
+  <!-- <section>
   <div class="timeline-container">
     <div class="relative h-[300vh] overflow-hidden">
-      <!-- Background Image -->
+   
       <img src="./images/animated_dim.jpg" alt="Background Path" class="w-full absolute object-cover">
 
       <h1 class="text-white absolute text-4xl md:text-7xl md:top-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-100 font-bold">Timeline</h1>
@@ -43,15 +229,13 @@
         <img src="./images/path.png" alt="Path" class="map-image w-[98vw]">
       </div>
       
-      <!--  -->
-      <!-- height: 0.184864%; -->
-      <!-- w-[22vw] -->
+     
 
-      <!-- First Event -->
+
       <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 10%; left: 40%;">
-        <!-- Blue Dot -->
+       
         <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: 12vh; left: -2vw;"></div>
-        <!-- Event Box -->
+       
         <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
              style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-10%) translateX(-115%);">
           <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
@@ -66,11 +250,11 @@
         </div>
       </div>
 
-      <!-- Second Event -->
+ 
       <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 40%; left: 40%;">
-        <!-- Blue Dot -->
+     
         <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -17vh; left: 19.5vw;"></div>
-        <!-- Event Box -->
+      
         <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
              style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-90%) translateX(127%);">
           <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
@@ -85,11 +269,10 @@
         </div>
       </div>
 
-      <!-- Third Event -->
       <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 70%; left: 40%;">
-        <!-- Blue Dot -->
+       
         <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -63vh; left: 1vw;"></div>
-        <!-- Event Box -->
+      
         <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
              style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-180%) translateX(-100%);">
           <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
@@ -105,11 +288,11 @@
       </div>
 
       
-      <!-- Fourth Event -->
+ 
       <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 40%; left: 40%;">
-        <!-- Blue Dot -->
+      
         <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: 70vh; left: 18vw;"></div>
-        <!-- Event Box -->
+       
         <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
              style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform:  translateY(40%) translateX(120%);">
           <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
@@ -124,11 +307,11 @@
         </div>
       </div>
 
-      <!-- Fifth Event -->
+
       <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 100%; left: 40%;">
-        <!-- Blue Dot -->
+    
         <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -83vh; left: 2vw;"></div>
-        <!-- Event Box -->
+     
         <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
              style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-190%) translateX(-100%);">
           <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
@@ -146,7 +329,69 @@
     </div>
   </div>
 
+</section> -->
+<section id="cu" class="py-24 bg-black">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 grid-cols-1">
+        <div class="lg:mb-0 mb-10">
+            <div class="group w-full h-full">
+                <div class="relative h-full">
+                    <img src="images/contactUs.jpg" alt="ContactUs tailwind section" class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover"/>
+                    <h1 class="font-manrope text-white text-4xl font-bold leading-10 absolute top-11 left-11">Contact us</h1>
+                    <div class="absolute bottom-0 w-full lg:p-11 p-5">
+                        <div class="bg-black bg-opacity-70 rounded-lg p-6 block">
+                            <a href="javascript:;" class="flex items-center mb-6">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.3092 18.3098C22.0157 18.198 21.8689 18.1421 21.7145 18.1287C21.56 18.1154 21.4058 18.1453 21.0975 18.205L17.8126 18.8416C17.4392 18.9139 17.2525 18.9501 17.0616 18.9206C16.8707 18.891 16.7141 18.8058 16.4008 18.6353C13.8644 17.2551 12.1853 15.6617 11.1192 13.3695C10.9964 13.1055 10.935 12.9735 10.9133 12.8017C10.8917 12.6298 10.9218 12.4684 10.982 12.1456L11.6196 8.72559C11.6759 8.42342 11.7041 8.27233 11.6908 8.12115C11.6775 7.96998 11.6234 7.82612 11.5153 7.5384L10.6314 5.18758C10.37 4.49217 10.2392 4.14447 9.95437 3.94723C9.6695 3.75 9.29804 3.75 8.5551 3.75H5.85778C4.58478 3.75 3.58264 4.8018 3.77336 6.06012C4.24735 9.20085 5.64674 14.8966 9.73544 18.9853C14.0295 23.2794 20.2151 25.1426 23.6187 25.884C24.9335 26.1696 26.0993 25.1448 26.0993 23.7985V21.2824C26.0993 20.5428 26.0993 20.173 25.9034 19.8888C25.7076 19.6046 25.362 19.4729 24.6708 19.2096L22.3092 18.3098Z" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <h5 class="text-yellow-600 text-base font-normal leading-6 ml-5">470-601-1911</h5>
+                            </a>
+                            <a href="javascript:;" class="flex items-center mb-6">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.81501 8.75L10.1985 13.6191C12.8358 15.2015 14.1544 15.9927 15.6032 15.9582C17.0519 15.9237 18.3315 15.0707 20.8905 13.3647L27.185 8.75M12.5 25H17.5C22.214 25 24.5711 25 26.0355 23.5355C27.5 22.0711 27.5 19.714 27.5 15C27.5 10.286 27.5 7.92893 26.0355 6.46447C24.5711 5 22.214 5 17.5 5H12.5C7.78595 5 5.42893 5 3.96447 6.46447C2.5 7.92893 2.5 10.286 2.5 15C2.5 19.714 2.5 22.0711 3.96447 23.5355C5.42893 25 7.78595 25 12.5 25Z" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <h5 class="text-yellow-600 text-base font-normal leading-6 ml-5">Pagedone1234@gmail.com</h5>
+                            </a>
+                            <a href="javascript:;" class="flex items-center">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 12.9169C25 17.716 21.1939 21.5832 18.2779 24.9828C16.8385 26.6609 16.1188 27.5 15 27.5C13.8812 27.5 13.1615 26.6609 11.7221 24.9828C8.80612 21.5832 5 17.716 5 12.9169C5 10.1542 6.05357 7.5046 7.92893 5.55105C9.8043 3.59749 12.3478 2.5 15 2.5C17.6522 2.5 20.1957 3.59749 22.0711 5.55105C23.9464 7.5046 25 10.1542 25 12.9169Z" stroke="#FBBF24" stroke-width="2"/>
+                                    <path d="M17.5 11.6148C17.5 13.0531 16.3807 14.219 15 14.219C13.6193 14.219 12.5 13.0531 12.5 11.6148C12.5 10.1765 13.6193 9.01058 15 9.01058C16.3807 9.01058 17.5 10.1765 17.5 11.6148Z" stroke="#FBBF24" stroke-width="2"/>
+                                </svg>
+                                <h5 class="text-yellow-600 text-base font-normal leading-6 ml-5">654 Sycamore Avenue, Meadowville, WA 76543</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
+            <h2 class="text-yellow-600 font-manrope text-4xl font-semibold leading-10 mb-11">Send Us A Message</h2>
+            <input type="text" class="w-full h-12 text-gray-300 placeholder-gray-400 bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-600 focus:outline-none pl-4 mb-10" placeholder="Name">
+            <input type="text" class="w-full h-12 text-gray-300 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-600 focus:outline-none pl-4 mb-10" placeholder="Email">
+            <input type="text" class="w-full h-12 text-gray-300 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-600 focus:outline-none pl-4 mb-10" placeholder="Phone">
+            <div class="mb-10">
+                <h4 class="text-gray-500 text-lg font-normal leading-7 mb-4">Preferred method  of communication</h4>
+                <div class="flex">
+                    <div class="flex items-center mr-11">
+                        <input id="radio-group-1" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                        <label for="radio-group-1" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
+                            <span class="border border-gray-300 rounded-full mr-2 w-4 h-4  ml-2 "></span> Email 
+                        </label>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="radio-group-2" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                        <label for="radio-group-2" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
+                            <span class="border border-gray-300  rounded-full mr-2 w-4 h-4  ml-2 "></span> Phone 
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <input type="text" class="w-full h-12 text-gray-300 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-gray-600 focus:outline-none pl-4 mb-10" placeholder="Message">
+            <button class="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-yellow-500 bg-yellow-600 shadow-sm">Send</button>
+        </div>
+    </div>
+  </div>
 </section>
-
+<script src="script.js"></script>
 </body>
 </html>

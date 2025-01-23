@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pricedown&display=swap');
+    .font-pricedown {
+      font-family: 'Pricedown', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+    <section class="min-h-screen">
+        <!-- Header -->
+        <h1 class="text-4xl font-bold text-center mt-8">Cultural Evolution</h1>
+        
+        <!-- Search and Filter Section -->
+        <div class="flex justify-center gap-8 mt-2 mb-4">
+          <input type="text" id="search-bar" class="w-1/3 h-12 p-4 text-gray-600 bg-gray-200 rounded-full focus:outline-none" placeholder="Search for artifact...">
+          <select id="dropdown" class="h-12 p-2 text-gray-600 bg-gray-200 rounded-full focus:outline-none">
+            <option value="">Select Artifact</option>
+            <option value="sword">Sword</option>
+            <option value="gun">Gun</option>
+            <option value="shield">Shield</option>
+            <option value="tea-kettles">Tea Kettles</option>
+            <option value="vase">Vase</option>
+            <option value="bell">Bell</option>
+          </select>
+        </div>
+    
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-3 gap-4 p-2" id="cards-container">
+          
+          <!-- Card 1 (Sword) -->
+          <a href="./pages/swordTimeline.html" class="flex flex-col items-center border rounded-lg shadow card" data-category="sword" target="_blank">
+            <div class="relative w-full h-48">
+              <img src="images/sword.jpg" class="w-full h-full object-cover rounded-t-lg" alt="Sword">
+            </div>
+            <div class="flex flex-col justify-between p-4 leading-normal text-center">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">Sword</h5>
+              <p class="mb-3 font-normal">A look at how the design and use of swords have evolved over centuries.</p>
+            </div>
+          </a>
+        
+          <!-- Card 2 (Gun) -->
+          <a href="pages/gunTimeline.html" class="flex flex-col items-center border rounded-lg shadow card" data-category="gun" target="_blank">
+            <div class="relative w-full h-48">
+              <img src="images/gun.jpeg" class="w-full h-full object-cover rounded-t-lg" alt="Gun">
+            </div>
+            <div class="flex flex-col justify-between p-4 leading-normal text-center">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">Gun</h5>
+              <p class="mb-3 font-normal">The evolution of firearms and their impact on history.</p>
+            </div>
+          </a>
+        
+          <!-- Card 3 (Shield) -->
+          <a href="./pages/shieldTimeline.html" class="flex flex-col items-center border rounded-lg shadow card" data-category="shield" target="_blank">
+            <div class="relative w-full h-48">
+              <img src="images/shield.jpeg" class="w-full h-full object-cover rounded-t-lg" alt="Shield">
+            </div>
+            <div class="flex flex-col justify-between p-4 leading-normal text-center">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">Shield</h5>
+              <p class="mb-3 font-normal">A deep dive into the development of shields for protection and warfare.</p>
+            </div>
+          </a>
+        
+          <!-- Card 4 (Tea Kettles) -->
+          <a href="./pages/teaTimeline.html" target="_blank" class="flex flex-col items-center border rounded-lg shadow card" data-category="tea-kettles">
+            <div class="relative w-full h-48">
+              <img src="images/tea_kettle.jpeg" class="w-full h-full object-cover rounded-t-lg" alt="Tea Kettles">
+            </div>
+            <div class="flex flex-col justify-between p-4 leading-normal text-center">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">Tea Kettles</h5>
+              <p class="mb-3 font-normal">A fascinating look at the evolution of tea kettles over time.</p>
+            </div>
+          </a>
+        
+          <!-- Card 5 (Vase) -->
+          <a href="./pages/vaseTimeline.html" target="_blank" class="flex flex-col items-center border rounded-lg shadow card" data-category="vase">
+            <div class="relative w-full h-48">
+              <img src="images/vase.jpg" class="w-full h-full object-cover rounded-t-lg" alt="Vase">
+            </div>
+            <div class="flex flex-col justify-between p-4 leading-normal text-center">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">Vase</h5>
+              <p class="mb-3 font-normal">The artistic transformation of vases through the centuries.</p>
+            </div>
+          </a>
+        
+          <!-- Card 6 (Bell) -->
+          <a href="./pages/bellTimeline.html" target="_blank" class="flex flex-col items-center border rounded-lg shadow card" data-category="bell">
+            <div class="relative w-full h-48">
+              <img src="images/Bell_27.jpg" class="w-full h-full object-cover rounded-t-lg" alt="Bell">
+            </div>
+            <div class="flex flex-col justify-between p-4 leading-normal text-center">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">Bell</h5>
+              <p class="mb-3 font-normal">How bells have been crafted and their significance through history.</p>
+            </div>
+          </a>
+          
+        </div>
+      </section>
+    
+      <script>
+        // Search functionality
+        const searchBar = document.getElementById('search-bar');
+        const cards = document.querySelectorAll('.card');
+        
+        searchBar.addEventListener('input', function() {
+          const searchText = searchBar.value.toLowerCase();
+          cards.forEach(card => {
+            const heading = card.querySelector('h5').textContent.toLowerCase();
+            if (heading.includes(searchText)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+    
+        // Dropdown functionality
+        const dropdown = document.getElementById('dropdown');
+        dropdown.addEventListener('change', function() {
+          const selectedCategory = dropdown.value;
+          cards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (selectedCategory === category || selectedCategory === '') {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      </script>
+    
+</body>
+</html>

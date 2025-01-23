@@ -1,12 +1,15 @@
-const mapImage = document.querySelector('.map-image');
+// Select all video elements inside the cards
+const videos = document.querySelectorAll('video');
 
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY;
-  const imagePosition = mapImage.offsetTop;
+// Add event listeners to each video
+videos.forEach(video => {
+  video.addEventListener('mouseenter', () => {
+    video.play();  // Play the video when hovered
+  });
 
-  if (scrollPosition >= imagePosition - window.innerHeight * 0.5) {
-    mapImage.classList.add('visible');
-  } else {
-    mapImage.classList.remove('visible');
-  }
+  video.addEventListener('mouseleave', () => {
+    video.pause();  // Pause the video when mouse leaves
+    video.currentTime = 0;  // Reset the video to the first frame
+  });
 });
+
