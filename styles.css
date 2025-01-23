@@ -1,0 +1,8 @@
+
+  .map-image {
+    opacity: 0;
+  }
+  
+  .map-image.visible {
+    opacity: 1;
+  }

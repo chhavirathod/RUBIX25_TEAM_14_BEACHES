@@ -14,14 +14,39 @@
 </head>
 <body class="bg-black text-white">
   
+  <section class="min-h-screen">
+
+    <nav class="sticky top-0 z-10">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+
+
+  </section>
+
+  <section>
   <!-- Timeline Container -->
   <div class="timeline-container">
     <div class="relative h-[300vh] overflow-hidden">
       <!-- Background Image -->
-      <img src="animated_dim.jpg" alt="Background Path" class="w-full absolute object-cover">
+      <img src="./images/animated_dim.jpg" alt="Background Path" class="w-full absolute object-cover">
 
       <h1 class="text-white absolute text-4xl md:text-7xl md:top-4 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 opacity-100 font-bold">Timeline</h1>
+      <div class="image-container absolute left-[1vw] top-[5vh] max-h-[200vw] overflow-hidden">
+        <img src="./images/path.png" alt="Path" class="map-image w-[98vw]">
+      </div>
       
+      <!--  -->
+      <!-- height: 0.184864%; -->
+      <!-- w-[22vw] -->
+
       <!-- First Event -->
       <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 10%; left: 40%;">
         <!-- Blue Dot -->
@@ -30,7 +55,7 @@
         <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
              style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-10%) translateX(-115%);">
           <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
-            <img src="museum_image.jpeg" alt="">
+            <img src="./images/museum_image.jpeg" alt="">
           </div>
           <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
             14th October
@@ -47,15 +72,15 @@
         <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -17vh; left: 19.5vw;"></div>
         <!-- Event Box -->
         <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
-             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-90%) translateX(107%);">
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-90%) translateX(127%);">
           <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
-            <img src="museum_image.jpeg" alt="">
+            <img src="./images/museum_image.jpeg" alt="">
           </div>
           <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
             19th October
           </div>
           <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
-            Datahack 3.0 Inauguration Ceremony Begins
+            Inauguration Ceremony Begins
           </div>
         </div>
       </div>
@@ -66,9 +91,9 @@
         <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -63vh; left: 1vw;"></div>
         <!-- Event Box -->
         <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
-             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-130%) translateX(-100%);">
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-180%) translateX(-100%);">
           <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
-            <img src="museum_image.jpeg" alt="">
+            <img src="./images/museum_image.jpeg" alt="">
           </div>
           <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
             19th October
@@ -86,20 +111,42 @@
         <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: 70vh; left: 18vw;"></div>
         <!-- Event Box -->
         <div class="absolute w-[30vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
-             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform:  translateY(40%) translateX(100%);">
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform:  translateY(40%) translateX(120%);">
           <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
-            <img src="museum_image.jpeg" alt="">
+            <img src="./images/museum_image.jpeg" alt="">
           </div>
           <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
             19th October
           </div>
           <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
-            Datahack 3.0 Inauguration Ceremony Begins
+            Inauguration Ceremony Begins
+          </div>
+        </div>
+      </div>
+
+      <!-- Fifth Event -->
+      <div class="pin absolute transition-opacity duration-500 opacity-100" style="top: 100%; left: 40%;">
+        <!-- Blue Dot -->
+        <div class="absolute w-4 h-4 sm:w-5 sm:h-5 bg-blue-500 rounded-full border-2 border-black" style="top: -83vh; left: 2vw;"></div>
+        <!-- Event Box -->
+        <div class="absolute w-[90vw] md:w-[270px] p-3 bg-black bg-opacity-60 rounded-md border-2 border-yellow-500"
+             style="box-shadow: rgba(255, 215, 0, 0.7) 0px 0px 15px, rgba(255, 215, 0, 0.5) 0px 0px 25px; transform: translateY(-190%) translateX(-100%);">
+          <div class="text-yellow-500 text-[1rem] md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            <img src="./images/museum_image.jpeg" alt="">
+          </div>
+          <div class="text-yellow-500 text-[1rem] md:text-3xl mb-1" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            19th October
+          </div>
+          <div class="text-white text-[0.9rem] md:text-3xl font-bold" style="text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 5px;">
+            Coding Round Begins
           </div>
         </div>
       </div>
 
     </div>
   </div>
+
+</section>
+
 </body>
 </html>
